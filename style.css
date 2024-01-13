@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 87px 120px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 34px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+.logo > h3 {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* header section  */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 130px;
+}
+.header-img {
+  background-image: url(images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-img img {
+  width: 100%;
+}
+.header-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  width: 580px;
+}
+.header-description {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-right: 130px;
+}
+
+.btn {
+  border-radius: 41px;
+  background: #e02c6d;
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border: 0;
+  margin-top: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+/* sponsor section  */
+.sponsor {
+  margin-top: 100px;
+}
+.sponsor ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sponsor ul li {
+  margin-right: 60px;
+  list-style: none;
+}
+.sponsor ul li img {
+  width: 100%;
+}
+.sponsor ul .target {
+  color: #fb8200;
+  font-size: 40px;
+}
+
+/* main section  */
+.popular {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 190px;
+}
+.popular-card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  width: 329px;
+  height: 476px;
+  padding: 17px 15px;
+}
+.popular-card img {
+  width: 100%;
+}
+.rating {
+  color: #fb8200;
+}
+.rating > .black {
+  color: bisque;
+}
+span {
+  color: black;
+  margin-left: 10px;
+}
+@media screen and (max-width: 576px) {
+  nav,
+  nav ul,
+  .header-section {
+    flex-direction: column;
+  }
+  nav,
+  .header-section,
+  .popular {
+    padding: 10px;
+  }
+  .header-description,
+  .header-info {
+    margin-right: 0;
+    text-align: center;
+  }
+  .popular {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+  .header-title {
+    width: 400px;
+    text-align: center;
+  }
+  .header-info {
+    margin-bottom: 10px;
+  }
+}
